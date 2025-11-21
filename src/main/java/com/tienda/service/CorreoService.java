@@ -16,13 +16,8 @@ public class CorreoService {
     }
 
     public void enviarCorreoHtml(String para,
-<<<<<<< HEAD
-                                 String asunto,
-                                 String contenido) throws MessagingException {
-=======
             String asunto,
             String contenido) throws MessagingException {
->>>>>>> 41d628433a12caa4fb2d2c1112476f387bc8efdc
 
         MimeMessage mensaje = mailSender.createMimeMessage();
         MimeMessageHelper correo = new MimeMessageHelper(mensaje, true);
@@ -32,8 +27,5 @@ public class CorreoService {
         correo.setText(contenido, true);
         mailSender.send(mensaje);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 41d628433a12caa4fb2d2c1112476f387bc8efdc
+
